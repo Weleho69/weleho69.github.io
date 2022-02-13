@@ -2,7 +2,7 @@
 <html lang="en">
 
 	<head>
-		<title>Teemu Luostarinen verkkoportfolioa</title>
+		<title>Teemu Luostarinen verkkoportfolio</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -49,45 +49,10 @@
 		<!-- Navigointipalkki -->
 		<div class="white-box">
 			<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-				  <li class="nav-item ">
-					<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(0) ">Home <span class="sr-only">(current)</span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(1)">Showreel <span class="sr-only">(current)</span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(2)">Resources</a>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link bg-secondary text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Projects
-					</a>
-					<div class="dropdown-menu bg-secondary text-white" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item bg-secondary text-white" href="https://github.com/RabbitWhite/UNITY_AIS">AI Simulator for Unity ( very early development, not even a proto yet)</a>
-					  <a class="dropdown-item bg-secondary text-white" href="https://github.com/RabbitWhite/UNREAL_AIS">AI Simulator for Unreal ( very early development, not even a proto yet)</a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item bg-secondary text-white" href="https://hackmd.io/s/Bk1OlC4JE">Developer blog for the above AI simulators.</a>
-					</div>
-				  </li>
-				</ul>
-			  </div>
+			  
 				
 			  	
-				<div id="BrCr", div class="white-box">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb  bg-secondary text-white">
-							<li>You're at:&nbsp;</li>
-							<li class="breadcrumb-item active bg-secondary text-white"aria-current="page">Home</li>
-							
-						</ol>
-					</nav>
-				</div>
+				
 			</nav>
 		</div>
 		
@@ -102,7 +67,7 @@
 
 		<script>
 		
-		<!-- Sisällön vaihtaminen navigointipalkin valintojen perusteella -->
+		/*<!-- Sisällön vaihtaminen navigointipalkin valintojen perusteella -->*/
 		var textChange = function(index) {
 			if (index == 0)
 			{
@@ -121,7 +86,7 @@
 			}
 		};
 		
-		<!-- Vaihtoehtoiset sisällöt -->
+		//<!-- Vaihtoehtoiset sisällöt -->
 		var indexHTML = "<div class=\"white-box\">\
 							  <nav id=\"navbar-example3\" class=\"navbar navbar-light flex-column\">\
 							  <ul class=\"nav flex-column text-left\">\
@@ -152,131 +117,63 @@
 								</ul>\
 							  </nav>\
 					</div>\
-					<div class=\"white-box\">\
-							<div data-spy=\"scroll\" data-target=\"#navbar-example3\" data-offset=\"0\">\
-							<div>\
-							  <h5 id=\"Perception\">Perception</h5>\
-							  <link rel=\"stylesheet\" href=\"tyyli.css\">\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  <h5 id=\"Knowledge Representation\">Knowledge Representation</h5>\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  <h5 id=\"Reasoning and Problem Solving\">Reasoning and Problem Solving</h5>\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  <h5 id=\"Planning\">Planning</h5>\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  <h5 id=\"Learning\">Learning</h5>\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  <h5 id=\"Movement\">Movement</h5>\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  <h5 id=\"Pathfinding\">Pathfinding</h5>\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  <h5 id=\"Natural Language Processing\">Natural Language Processing</h5>\
-							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
-							  </div>\
-							</div>\
-						</div>";
+					";
 		
-		var showreelHTML = "<div class=\"card mx-auto\" style=\"width: 18rem;\">\
-							<div class=\"embed-responsive embed-responsive-16by9\">\
-								<iframe class=\"embed-responsive-item\" src=\"Kuvat/Unity_sbSeek_demo.mp4\"></iframe>\
-							</div>\
-							  <div class=\"card-body\">\
-								<p class=\"card-text\"> Seek steering behaviour implemented in the AI Simulator for Unity.</p>\
-							  </div>\
-							</div>\
-							<div class=\"card mx-auto\" style=\"width: 18rem;\">\
-							<div class=\"embed-responsive embed-responsive-16by9\">\
-								<iframe class=\"embed-responsive-item\" src=\"Kuvat/Unity_sbFlee_demo.mp4\"></iframe>\
-							</div>\
-							  <div class=\"card-body\">\
-								<p class=\"card-text\">Flee steering behaviour implemented in the AI Simulator for Unity.</p>\
-							  </div>\
-							</div>\
-							<div class=\"card mx-auto\" style=\"width: 18rem;\">\
-							<div class=\"embed-responsive embed-responsive-16by9\">\
-								<iframe class=\"embed-responsive-item\" src=\"Kuvat/Unity_sbArrive_demo.mp4\"></iframe>\
-							</div>\
-							  <div class=\"card-body\">\
-								<p class=\"card-text\">Arrive steering behaviour implemented in the AI Simulator for Unity.</p>\
-							  </div>\
-							</div>\
-							<div class=\"card mx-auto\" style=\"width: 18rem;\">\
-							<div class=\"embed-responsive embed-responsive-16by9\">\
-								<iframe class=\"embed-responsive-item\" src=\"Kuvat/Unreal_sbSeek_demo.mp4\"></iframe>\
-							</div>\
-							  <div class=\"card-body\">\
-								<p class=\"card-text\">Seek steering behaviour implemented in the AI Simulator for Unreal.</p>\
-							  </div>\
-							</div>\
-							<div class=\"card mx-auto\" style=\"width: 18rem;\">\
-							<div class=\"embed-responsive embed-responsive-16by9\">\
-								<iframe class=\"embed-responsive-item\" src=\"Kuvat/Unreal_sbFlee_demo.mp4\"></iframe>\
-							</div>\
-							  <div class=\"card-body\">\
-								<p class=\"card-text\">Flee steering behaviour implemented in the AI Simulator for Unreal.</p>\
-							  </div>\
-							</div>\
-							<div class=\"card mx-auto\" style=\"width: 18rem;\">\
-							<div class=\"embed-responsive embed-responsive-16by9\">\
-								<iframe class=\"embed-responsive-item\" src=\"Kuvat/Unreal_sbArrive_demo.mp4\"></iframe>\
-							</div>\
-							  <div class=\"card-body\">\
-								<p class=\"card-text\">Arrive steering behaviour implemented in the AI Simulator for Unreal.</p>\
-							  </div>\
-							</div>";
-							
-		var resourcesHTML = "<div class=\"col-sm-12 bg-light text-dark min-vh-100\">\
-						Links here, please.\
-						</div>";		
-	
-						
-		var indexBrCrHTML = "<nav aria-label=\"breadcrumb\">\
-								<ol class=\"breadcrumb bg-secondary text-white\">\
-									<li class=\" bg-secondary text-white\">You're at:&nbsp;</li>\
-									<li class=\"breadcrumb-item active bg-secondary text-white\"aria-current=\"page\">Home</li>\
-								</ol>\
-							</nav>";
-		var showreelBrCrHTML = "<nav aria-label=\"breadcrumb\">\
-								<ol class=\"breadcrumb bg-secondary text-white\">\
-									<li class=\" bg-secondary text-white\">You're at:&nbsp;</li>\
-									<li class=\"breadcrumb-item active bg-secondary text-white\"aria-current=\"page\">Showreel</li>\
-								</ol>\
-							</nav>";
-		var resourcesBrCrHTML = "<nav aria-label=\"breadcrumb\">\
-								<ol class=\"breadcrumb bg-secondary text-white\">\
-									<li class=\" bg-secondary text-white\">You're at:&nbsp;</li>\
-									<li class=\"breadcrumb-item active bg-secondary text-white\"aria-current=\"page\">Resources</li>\
-								</ol>\
-							</nav>";
+		var 
 		
-		<!-- Latausfunktio aloitussisällön lataamiseksi -->
+		//<!-- Latausfunktio aloitussisällön lataamiseksi -->
 		function LoadInitialContent() {
 		  document.getElementById("demo").innerHTML = indexHTML;
 		}
 	  </script>
+	  
+		<div class="white-box">
+			<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+			<div>
+			  <h5 id="Perception">Perception</h5>
+			  <link rel="stylesheet" href="tyyli.css">
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  <h5 id="Knowledge Representation">Knowledge Representation</h5>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  <h5 id="Reasoning and Problem Solving">Reasoning and Problem Solving</h5>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  <h5 id="Planning">Planning</h5>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  <h5 id="Learning">Learning</h5>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  <h5 id="Movement">Movement</h5>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  <h5 id="Pathfinding">Pathfinding</h5>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  <h5 id="Natural Language Processing">Natural Language Processing</h5>
+			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  </div>
+			</div>
+		</div>
+	
 	</body>
 </html>
