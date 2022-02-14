@@ -7,8 +7,8 @@
     
 }
 body{
-padding-left: 10%;
-padding-right: 10%;
+padding-left: 5%;
+padding-right: 5%;
 background-color: #ffffff;
 
 }
@@ -24,7 +24,10 @@ background-color: #ffffff;
     font-family: "Calibri";
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    width: 100%;
+    left: 0;
+    
+    
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -76,16 +79,3 @@ background-color: #ffffff;
       text-align: left;
     }
   }
-  @media only screen and (max-width: 950px) {
-    .cf7_custom_style_1 {
-       padding-left: 10%;
-       padding-right: 10%;
-    }
- }
- 
- @media only screen and (max-width: 600px) {
-    .cf7_custom_style_1 {
-       padding-left: 0;
-       padding-right: 0;
-    }
- }
