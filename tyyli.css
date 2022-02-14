@@ -12,7 +12,9 @@ padding-right: 5%;
 background-color: #727272;
 position: center;
 }
-
+.responsive{
+    width: fit-content;
+}
 
 .white-box{
     color: black;
