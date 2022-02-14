@@ -26,7 +26,7 @@ background-color: #ffffff;
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
     left: 0;
-    
+
     
     
 }
@@ -57,9 +57,14 @@ background-color: #ffffff;
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
+    
   }
   @media screen and (max-width: 600px) {
+    
     .topnav a:not(:first-child) {display: none;}
+    .topnav a:first-of-type{
+        display: block;
+    }
     .topnav a.icon {
       float: right;
       display: block;
