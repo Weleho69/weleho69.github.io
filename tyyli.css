@@ -12,6 +12,7 @@ padding-right: 5%;
 background-color: #ffffff;
 
 }
+
 .white-box{
     color: black;
     background-color: white;
@@ -91,4 +92,12 @@ background-color: #ffffff;
         padding: 2% 2%;
         
     }
+
   }
+@media screen and (max-width: 1200px) {
+    .responsive{
+        height: auto;
+        max-width: 400px;
+    }
+    
+}
