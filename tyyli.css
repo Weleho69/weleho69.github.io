@@ -101,7 +101,8 @@ background-color: #727272;
     }
     .responsive{
         height: auto;
-        max-width: 200px;
+        width: auto;
+        max-width: 350px;
     }
   }
 
