@@ -18,7 +18,8 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 				<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(0)">Etusivu</a>			  			  
 				<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(1)">Työkokemus</a>
-				<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(2)">Resources</a>
+				<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(2)">Taidot</a>
+				<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(3)">Harrastukset</a>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 					<i class="fa fa-bars"></i>
 				  </a>
@@ -63,7 +64,7 @@
 					
 					<h1>Verkkoportfolio: Teemu Luostarinen</h1>
 					<blockquote class="blockquote">
-					<p class="mb-0">Savolainen koodari 1</p>
+					<p class="mb-0">Savolainen koodari</p>
 					
 					</blockquote>
 				</div>
@@ -96,8 +97,12 @@
 			}
 			else if (index == 2)
 			{
-				document.getElementById("demo").innerHTML = resourcesHTML;
-				document.getElementById("BrCr").innerHTML = resourcesBrCrHTML
+				document.getElementById("demo").innerHTML = taidotHTML;
+				
+			}
+			else if (index == 3)
+			{
+				document.getElementById("demo").innerHTML = harrastuksetHTML;
 			}
 		};
 		
@@ -189,6 +194,63 @@
 							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
 							  </div>\
 							</div>";
+							
+				taidotHTML="<h2>YEP</h2>\
+				<img src=\"kuva1.png\" alt=\"Setup kuva\" class=\"responsive1\">\
+				<div class=\"white-box\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu dui vel massa gravida pulvinar et quis ex.\
+				Vivamus eu purus dui. Vivamus a felis ullamcorper, commodo erat ac, tincidunt risus. Phasellus at justo cursus, vulputate sapien et, interdum erat.\
+				Duis bibendum purus velit. Nunc facilisis porttitor ultrices. Donec mollis pulvinar nibh, ut varius sapien maximus ac.\
+				Phasellus ac massa nec nulla venenatis viverra in quis odio. Nunc imperdiet enim diam. Donec sed rutrum sapien, ac mollis est.\
+				Nunc feugiat nulla vel augue semper, at fermentum turpis euismod. Fusce tempus elementum augue in rutrum. Aliquam non ex auctor odio laoreet viverra.\
+				Etiam tempus purus velit, sit amet fringilla elit blandit id. Interdum et malesuada fames ac ante ipsum primis in faucibus.\
+				Maecenas vehicula, odio non accumsan semper, velit lectus fringilla metus, et ultrices lorem velit eu sem. Sed nibh nibh, tincidunt pretium erat feugiat, rhoncus aliquet risus.\
+				Sed at nunc nec mauris pretium suscipit. Pellentesque neque justo, tristique non maximus facilisis, gravida hendrerit augue.\
+				Pellentesque elementum quam ut dui eleifend consectetur. Mauris vel velit neque. Nulla in blandit velit, euismod fringilla arcu.\
+				Curabitur euismod diam est, sed dictum turpis venenatis vitae. Phasellus in sem sed nisl ullamcorper vehicula sed sed enim. Vestibulum luctus eleifend posuere.\
+				Curabitur vestibulum, nisl semper sagittis auctor, massa lorem vehicula ante, ac facilisis nibh dolor suscipit metus. Curabitur vitae sem ac tellus ultricies bibendum.\
+				Proin vitae dapibus metus. Phasellus vestibulum dolor sapien, ut malesuada velit finibus ut. Nullam bibendum, lectus vel consectetur pretium, lorem tortor iaculis diam, tempor iaculis quam quam sed dolor.\
+				Donec placerat metus dictum ornare posuere. In eu arcu vulputate, ornare nisi vel, tempor orci. Aenean et hendrerit purus. Maecenas non tempor metus.\
+				Sed eu laoreet eros. Etiam ex eros, semper sed volutpat at, euismod vel magna. Curabitur convallis blandit urna, nec ultrices tortor commodo at.\
+				Aliquam volutpat condimentum quam. Integer blandit finibus purus. In vehicula dui id quam pulvinar, sit amet condimentum felis maximus.\
+				Vestibulum molestie mi et neque pretium fringilla non vel velit. Sed egestas posuere dui sit amet blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.\
+				In purus urna, mollis ut dapibus sed, tempus nec purus. Aliquam felis ante, fermentum non aliquam sollicitudin, tincidunt at sapien. Vivamus ac lectus quam.\
+				Aliquam ultrices turpis a lacus porta, at fermentum risus viverra. Aliquam ultrices nisi pharetra massa tempor, ut convallis sapien scelerisque. Donec imperdiet ipsum risus, ut iaculis sapien varius sed.\
+				Curabitur ac magna facilisis, condimentum urna eget, lobortis dui. Donec tristique in libero nec sodales. Maecenas pulvinar, ex id pellentesque tristique, lacus leo aliquet massa, sit amet luctus lectus ligula eu orci.\
+				Pellentesque et magna vitae felis sagittis sollicitudin ut nec massa. In at tortor leo. Ut posuere mauris felis, non posuere erat imperdiet ut.\
+				Cras felis purus, bibendum eget pharetra eget, porttitor vel lectus. Phasellus vitae auctor massa. Phasellus iaculis tristique placerat.\
+				Ut sit amet euismod orci. Donec id ligula et magna placerat aliquam eget et diam. Duis mattis augue dui, at imperdiet diam elementum iaculis.\
+				Cras et enim varius augue congue convallis. Ut lacinia odio nisl, ut faucibus metus eleifend sit amet. Suspendisse volutpat aliquet mauris dictum aliquam.\
+				Praesent id tempus turpis.\
+				</div>";
+
+
+				harrastuksetHTML="<h2>Harrastukset</h2>\
+				<a href=\"https://www.savonia.fi/\"><img src=\"kuvalinkki vaikka.jpg\" alt=\"Kuvalinkki\" class=\"responsive1\"></a>\
+				<div class=\"white-box\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu dui vel massa gravida pulvinar et quis ex.\
+				Vivamus eu purus dui. Vivamus a felis ullamcorper, commodo erat ac, tincidunt risus. Phasellus at justo cursus, vulputate sapien et, interdum erat.\
+				Duis bibendum purus velit. Nunc facilisis porttitor ultrices. Donec mollis pulvinar nibh, ut varius sapien maximus ac.\
+				Phasellus ac massa nec nulla venenatis viverra in quis odio. Nunc imperdiet enim diam. Donec sed rutrum sapien, ac mollis est.\
+				Nunc feugiat nulla vel augue semper, at fermentum turpis euismod. Fusce tempus elementum augue in rutrum. Aliquam non ex auctor odio laoreet viverra.\
+				Etiam tempus purus velit, sit amet fringilla elit blandit id. Interdum et malesuada fames ac ante ipsum primis in faucibus.\
+				Maecenas vehicula, odio non accumsan semper, velit lectus fringilla metus, et ultrices lorem velit eu sem. Sed nibh nibh, tincidunt pretium erat feugiat, rhoncus aliquet risus.\
+				Sed at nunc nec mauris pretium suscipit. Pellentesque neque justo, tristique non maximus facilisis, gravida hendrerit augue.\
+				Pellentesque elementum quam ut dui eleifend consectetur. Mauris vel velit neque. Nulla in blandit velit, euismod fringilla arcu.\
+				Curabitur euismod diam est, sed dictum turpis venenatis vitae. Phasellus in sem sed nisl ullamcorper vehicula sed sed enim. Vestibulum luctus eleifend posuere.\
+				Curabitur vestibulum, nisl semper sagittis auctor, massa lorem vehicula ante, ac facilisis nibh dolor suscipit metus. Curabitur vitae sem ac tellus ultricies bibendum.\
+				Proin vitae dapibus metus. Phasellus vestibulum dolor sapien, ut malesuada velit finibus ut. Nullam bibendum, lectus vel consectetur pretium, lorem tortor iaculis diam, tempor iaculis quam quam sed dolor.\
+				Donec placerat metus dictum ornare posuere. In eu arcu vulputate, ornare nisi vel, tempor orci. Aenean et hendrerit purus. Maecenas non tempor metus.\
+				Sed eu laoreet eros. Etiam ex eros, semper sed volutpat at, euismod vel magna. Curabitur convallis blandit urna, nec ultrices tortor commodo at.\
+				Aliquam volutpat condimentum quam. Integer blandit finibus purus. In vehicula dui id quam pulvinar, sit amet condimentum felis maximus.\
+				Vestibulum molestie mi et neque pretium fringilla non vel velit. Sed egestas posuere dui sit amet blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus.\
+				In purus urna, mollis ut dapibus sed, tempus nec purus. Aliquam felis ante, fermentum non aliquam sollicitudin, tincidunt at sapien. Vivamus ac lectus quam.\
+				Aliquam ultrices turpis a lacus porta, at fermentum risus viverra. Aliquam ultrices nisi pharetra massa tempor, ut convallis sapien scelerisque. Donec imperdiet ipsum risus, ut iaculis sapien varius sed.\
+				Curabitur ac magna facilisis, condimentum urna eget, lobortis dui. Donec tristique in libero nec sodales. Maecenas pulvinar, ex id pellentesque tristique, lacus leo aliquet massa, sit amet luctus lectus ligula eu orci.\
+				Pellentesque et magna vitae felis sagittis sollicitudin ut nec massa. In at tortor leo. Ut posuere mauris felis, non posuere erat imperdiet ut.\
+				Cras felis purus, bibendum eget pharetra eget, porttitor vel lectus. Phasellus vitae auctor massa. Phasellus iaculis tristique placerat.\
+				Ut sit amet euismod orci. Donec id ligula et magna placerat aliquam eget et diam. Duis mattis augue dui, at imperdiet diam elementum iaculis.\
+				Cras et enim varius augue congue convallis. Ut lacinia odio nisl, ut faucibus metus eleifend sit amet. Suspendisse volutpat aliquet mauris dictum aliquam.\
+				Praesent id tempus turpis.\
+				</div>";	
 		
 		//<!-- Latausfunktio aloitussisällön lataamiseksi -->
 		function LoadInitialContent() {

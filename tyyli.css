@@ -103,6 +103,9 @@ position: center;
         padding-left: 2%;
         padding-right: 2%;
     }
+    .white-box{
+        font-size: 14px;
+    }
     .responsive1{
         max-width: 95%;
         height: auto;
