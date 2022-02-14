@@ -75,7 +75,7 @@ position: center;
     .topnav a:not(:first-child) {display: none;}
     .topnav a:first-of-type{
         display: block;
-        width: 80%;
+        width: 60%;
     }
     .topnav a.icon {
       float: right;
@@ -104,7 +104,7 @@ position: center;
         padding-right: 2%;
     }
     .responsive1{
-        max-width: 250px;
+        max-width: 200px;
         height: auto;
         
         
