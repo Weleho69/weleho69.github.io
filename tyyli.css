@@ -78,6 +78,7 @@ position: center;
   @media screen and (max-width: 1200px) {
     .responsive{
         height: auto;
+        width: auto;
         max-width: 400px;
     }
     
