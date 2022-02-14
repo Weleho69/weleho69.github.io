@@ -12,9 +12,7 @@ padding-right: 5%;
 background-color: #727272;
 position: center;
 }
-.responsive1{
-    width: 90%;
-}
+
 
 .white-box{
     color: black;
@@ -67,9 +65,10 @@ position: center;
   }
   @media screen and (max-width: 1200px) {
     .responsive1{
+        max-width: 400px;
         height: auto;
         width: auto;
-        max-width: 400px;
+        
     }
   @media screen and (max-width: 600px) {
     
@@ -105,9 +104,10 @@ position: center;
         padding-right: 2%;
     }
     .responsive1{
+        max-width: 350px;
         height: auto;
         width: auto;
-        max-width: 350px;
+        
     }
   }
 
