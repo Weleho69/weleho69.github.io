@@ -63,11 +63,11 @@ position: center;
     display: none;
     
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1500px) {
     .responsive1{
-        max-width: 400px;
+        max-width: 450px;
         height: auto;
-        width: auto;
+        
         
     }
   @media screen and (max-width: 600px) {
@@ -106,7 +106,7 @@ position: center;
     .responsive1{
         max-width: 350px;
         height: auto;
-        width: auto;
+        
         
     }
   }
