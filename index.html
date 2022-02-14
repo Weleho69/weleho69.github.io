@@ -49,7 +49,19 @@
 		<!-- Navigointipalkki -->
 		<div class="white-box">
 			<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-			  
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item ">
+						<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(0) ">Etusivu <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(1)">Työkokemus</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link bg-secondary text-white" href="#" type="button" onclick="textChange(2)">Resources</a>
+					  </li>
+					</ul>
+				</div>
 				
 			  	
 				
@@ -72,7 +84,7 @@
 			if (index == 0)
 			{
 				document.getElementById("demo").innerHTML = indexHTML;
-				document.getElementById("BrCr").innerHTML = indexBrCrHTML;
+				
 			}
 			else if (index == 1)
 			{
@@ -86,40 +98,100 @@
 			}
 		};
 		
+		
 		//<!-- Vaihtoehtoiset sisällöt -->
 		var indexHTML = "<div class=\"white-box\">\
-							  <nav id=\"navbar-example3\" class=\"navbar navbar-light flex-column\">\
-							  <ul class=\"nav flex-column text-left\">\
-								 <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Perception\">Perception</a>\
-								  </li>\
-								  <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Knowledge Representation\">Knowledge Representation</a>\
-								  </li>\
-								  <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Reasoning and Problem Solving\">Reasoning and Problem Solving</a>\
-								  </li>\
-								  <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Planning\">Planning</a>\
-								  </li>\
-								  <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Learning\">Learning</a>\
-								  </li>\
-								  <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Movement\">Movement</a>\
-								  </li>\
-								  <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Pathfinding\">Pathfinding</a>\
-								  </li>\
-								  <li class=\"nav-item\">\
-									<a class=\"nav-link text-dark\" href=\"#Natural Language Processing\">Natural Language Processing</a>\
-								  </li>\
-								</ul>\
-							  </nav>\
-					</div>\
-					";
+							<div data-spy=\"scroll\" data-target=\"#navbar-example3\" data-offset=\"0\">\
+							<div>\
+							  <h5 id=\"Perception\">Kuka olen ja mitä teen? \</h5>\
+							  <link rel=\"stylesheet\" href=\"tyyli.css\">\
+							  <p>Nimeni on Teemu Luostarinen, olen 20-vuotias tietotekniikan insinööriopiskelija.\
+								Tällä sivustolla tulen esittelemään osan tekemisestäni ja mitä olen saavuttanut tähän asti. <br/>\
+								 &nbsp <a href=\"mailto:teemu.luostarinen@edu.savonia.fi\"> teemu.luostarinen@edu.savonia.fi </a> <br/>\
+								 &nbsp <a href=https://www.linkedin.com/in/teemu-luostarinen/> LinkedIn Teemu Luostarinen </a> <br/>\
+								 &nbsp +358 12 345 6789 <br/>\
+								 Olen ollut tekemissä tietokoneiden kanssa pienestä pitäen.\
+								 Siitä syntyi intohimo tietotekniikkaa kohtaan, joka jatkuu tähänkin päivään asti.\
+								 Sen lisäksi että haluan työllistyä tietokoneiden parissa, vietän myös vapaa-aikani tietokoneiden parissa.<br/> \
+								 Videopelit ja e-urheilu ovat lähellä sydäntäni ja olen seurannut e-urheilua jo pitkän aikaa.\
+								 </p>\
+							  <h5 id=\"Knowledge Representation\">Kokemus</h5>\
+							  <p>Aloitin koodauksen 2017 Visual C# Savon ammatti- ja aikuisopistossa. Siitä lähtien olen tehnyt ohjelmia C# Microsoftin Visual Studiossa. <br/>\
+								 Sitemmin olen aloittanut opiskelut Savonia Ammattikorkeakoulussa. Opiskelen tietotekniikan insinööriksi. Savoniassa olen opiskellut lisää C# ja aloittanut Java kielen opiskelun. </p>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  </div>\
+							</div>\
+						</div>";
 		
-		var 
+		var tyokokemusHTML = "<div class\"white-box\">\
+									<nav id =\"tyokok\">\
+										<div>\
+										<h5 id=\"Perception\">Perception</h5>\
+							  <link rel=\"stylesheet\" href=\"tyyli.css\">\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <h5 id=\"Knowledge Representation\">Knowledge Representation</h5>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <h5 id=\"Reasoning and Problem Solving\">Reasoning and Problem Solving</h5>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <h5 id=\"Planning\">Planning</h5>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <h5 id=\"Learning\">Learning</h5>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <h5 id=\"Movement\">Movement</h5>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <h5 id=\"Pathfinding\">Pathfinding</h5>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  <h5 id=\"Natural Language Processing\">Natural Language Processing</h5>\
+							  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
+							  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
+							  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
+							  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+							  </div>\
+							</div>\"";
 		
 		//<!-- Latausfunktio aloitussisällön lataamiseksi -->
 		function LoadInitialContent() {
@@ -127,53 +199,7 @@
 		}
 	  </script>
 	  
-		<div class="white-box">
-			<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-			<div>
-			  <h5 id="Perception">Perception</h5>
-			  <link rel="stylesheet" href="tyyli.css">
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  <h5 id="Knowledge Representation">Knowledge Representation</h5>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  <h5 id="Reasoning and Problem Solving">Reasoning and Problem Solving</h5>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  <h5 id="Planning">Planning</h5>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  <h5 id="Learning">Learning</h5>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  <h5 id="Movement">Movement</h5>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  <h5 id="Pathfinding">Pathfinding</h5>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  <h5 id="Natural Language Processing">Natural Language Processing</h5>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. \
-			  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure \
-			  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, \
-			  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			  </div>
-			</div>
-		</div>
+		
 	
 	</body>
 </html>
